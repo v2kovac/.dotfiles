@@ -9,7 +9,8 @@ pushd $DOTFILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
     echo "stow $folder"
-    stow --simulate --verbose --restow $folder
+    stow --restow -v $folder
+    echo ""
 done
 popd
 
