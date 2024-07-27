@@ -137,3 +137,5 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PATH="/usr/local/bin:$HOME/.local/scripts:/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+. "$HOME/.cargo/env"
