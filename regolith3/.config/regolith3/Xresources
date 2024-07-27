@@ -1,0 +1,5 @@
+wm.mod: Mod1
+wm.alt: Mod4
+regolith.sway.unsupported_gpu: true
+wm.gaps.inner.size: 0
+
