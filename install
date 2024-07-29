@@ -3,7 +3,7 @@
 # arrays.  Didn't want to investigate, so I just did zsh
 
 DOTFILES=$HOME/.dotfiles
-STOW_FOLDERS="aerospace,bin,kitty,nvim,regolith3,tmux,zsh"
+STOW_FOLDERS="aerospace,bin,fonts,kitty,nvim,regolith3,tmux,zsh"
 
 pushd $DOTFILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
