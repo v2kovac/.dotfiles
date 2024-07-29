@@ -1,3 +1,15 @@
+## brightness stuff
 bindsym XF86MonBrightnessUp exec --no-startup-id "~/.local/scripts/adjust_brightness.sh up"
 bindsym XF86MonBrightnessDown exec --no-startup-id "~/.local/scripts/adjust_brightness.sh down"
 
+## mac like bindings
+# cmd+q 
+bindsym $alt+$wm.binding.kill_app [con_id="__focused__"] exec --no-startup-id kill -9 $(xdotool getwindowfocus getwindowpid)
+# cmd+w
+bindsym --release $alt+w exec --no-startup-id xdotool key --clearmodifiers ctrl+w
+# cmd+t
+bindsym --release $alt+t exec --no-startup-id xdotool key --clearmodifiers ctrl+t
+# cmd+c, kitty requires a config for this to work properly
+bindsym --release $alt+c exec --no-startup-id xdotool key --clearmodifiers ctrl+c
+# cmd+v
+bindsym --release $alt+v exec --no-startup-id xdotool key --clearmodifiers ctrl+shift+v
