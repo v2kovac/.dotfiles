@@ -120,7 +120,7 @@ alias ghon="gh pr view --json url --jq .url | xargs -I {} open -na 'Google Chrom
 alias gho="gh pr view --web"
 
 # keybinding
-bindkey '^ ' autosuggest-accept
+bindkey '^y' autosuggest-accept
 
 # pnpm
 export PNPM_HOME="/Users/vlad/Library/pnpm"
