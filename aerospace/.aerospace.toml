@@ -2,6 +2,24 @@
 
 enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
+after-startup-command = [
+'exec-and-forget borders active_color=0xFF00FF00 inactive_color=0xff494d64 width=5'
+]
+
+# Gaps between windows (inner-*) and between monitor edges (outer-*).
+# Possible values:
+# - Constant:     gaps.outer.top = 8
+# - Per monitor:  gaps.outer.top = [{ monitor.main = 16 }, { monitor."some-pattern" = 32 }, 24]
+#                 In this example, 24 is a default value when there is no match.
+#                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
+#                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
+[gaps]
+inner.horizontal = 3
+inner.vertical =   3
+outer.left =       3
+outer.bottom =     3
+outer.top =        1
+outer.right =      3
 
 [workspace-to-monitor-force-assignment]
 1 = 'main'
@@ -11,6 +29,8 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 
 [mode.main.binding]
 alt-enter = 'exec-and-forget open -n /Applications/iTerm.app'
+cmd-h = [] # Disable "hide application"
+cmd-alt-h = [] # Disable "hide others"
 
 alt-h = 'focus left'
 alt-j = 'focus down'
