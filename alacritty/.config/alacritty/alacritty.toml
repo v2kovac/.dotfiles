@@ -1,0 +1,12 @@
+[window]
+decorations = "None"
+
+[font]
+size = 16
+normal.family = "Hack Nerd Font Mono"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[selection]
+save_to_clipboard = true

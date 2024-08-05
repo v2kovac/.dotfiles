@@ -28,7 +28,7 @@ outer.right =      3
 10 = 'secondary'
 
 [mode.main.binding]
-alt-enter = 'exec-and-forget open -n /Applications/iTerm.app'
+alt-enter = 'exec-and-forget open -n /Applications/kitty.app'
 cmd-h = [] # Disable "hide application"
 cmd-alt-h = [] # Disable "hide others"
 
